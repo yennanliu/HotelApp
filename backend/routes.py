@@ -3,7 +3,7 @@ from models import db, Hotel, Booking
 from app import ma
 import datetime
 
-api = Blueprint('api', __name__)
+api = Blueprint('api', __name__, url_prefix='/api')
 
 class HotelSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
